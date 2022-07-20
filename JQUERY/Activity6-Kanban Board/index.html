@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+		<title>Kanban Board</title>
+	</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 970px;
+            margin:auto;
+        }
+        #sortable1 {
+          border: 1px solid #eee;
+          width: 172px;
+          min-height: 20px;
+          list-style-type: none;
+          margin: 0;
+          padding: px 0 0 0;
+          float: left;
+          margin-right:10px;
+          margin-top: 100px;  
+          display: inline-block;
+        }
+        #sortable1 li {
+          margin: 0 5px 5px 5px;
+          padding: 5px;
+          font-size: 1.2em;
+          width: 150px;
+        }
+        h1{
+            text-align: center;
+            font-size: 25px;
+            background-color:yellow;
+            margin-bottom: 2px;
+        }
+        img{
+            width: 20px;
+            float: right;
+        }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+          $( "#sortable1, #sortable2" ).sortable({
+            connectWith: ".connectedSortable"
+          }).disableSelection();
+        } );
+        </script>
+      </head>
+      <body>
+       <div class="container">
+        
+      <ul id="sortable1" class="connectedSortable">
+        <h1>To do</h1>
+        <li class="ui-state-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <img src="1.png" alt="profile"></li>
+        <li class="ui-state-default"> Nulla lobortis libero id est ullamcorper, eu fauc <img src="2.png" alt="profile"></li>
+        <li class="ui-state-default">Sed suscipit porta tempor. Aenean <img src="1.png" alt="profile"></li>
+        
+      </ul>
+     
+       <ul id="sortable1" class="connectedSortable">
+        <h1>In progress</h1>
+        <li class="ui-state-default">bitur nisi arcu, tincidunt id est at, viverra tempus est. Duis laor<img src="1.png" alt="profile"></li>
+        <li class="ui-state-default">Sed suscipit porta tempor. Aenean<img src="2.png" alt="profile"></li>
+        <li class="ui-state-default">Sed suscipit porta tempor. Aenean<img src="1.png" alt="profile"></li>
+     
+      </ul>
+      
+      <ul id="sortable1" class="connectedSortable">
+        <h1>For Approval</h1>
+        <li class="ui-state-default">Sed suscipit porta tempor. Aenean<img src="1.png" alt="profile"></li>
+        <li class="ui-state-default">Sed suscipit porta tempor. Aenean<img src="1.png" alt="profile"></li>
+        <li class="ui-state-default">Sed suscipit porta tempor. Aenean<img src="2.png" alt="profile"></li>
+        <li class="ui-state-default">Sed suscipit porta tempor. Aenean<img src="1.png" alt="profile"></li>
+        <li class="ui-state-default">Sed suscipit porta tempor. Aenean<img src="2.png" alt="profile"></li>
+        
+      </ul> 
+      
+      <ul id="sortable1" class="connectedSortable" >
+        <h1>Testing</h1>
+        <li class="ui-state-default">tortor. Sed a sollicitudin risus, a tincidunt nisi. Phasellus<img src="1.png" alt="profile"></li>
+        
+      </ul>
+      
+      <ul id="sortable1" class="connectedSortable">
+        <h1>Done</h1>
+        <li class="ui-state-default">et quam. Duis id tempus felis. Donec eget neque<img src="2.png" alt="profile"></li>
+        <li class="ui-state-default">bitur nisi arcu, tincidunt id est at, viverra tempus est. Duis laor<img src="1.png" alt="profile"></li>
+        
+      </ul>
+    </div>
+      </body>
+</html>

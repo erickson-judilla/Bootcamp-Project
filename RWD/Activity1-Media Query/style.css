@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.navbtn {
+	width: 200px;
+	height: 100px;
+}
+@media only screen and (max-width: 480px) {
+	.navbtn {
+		background-color: yellow;
+		font-size: 10px;
+	}
+}
+@media only screen and (min-width: 481px) {
+	.navbtn {
+		background-color: blue;
+		font-size: 30px;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.navbtn {
+		background-color: red;
+		font-size: 60px;
+	}
+}

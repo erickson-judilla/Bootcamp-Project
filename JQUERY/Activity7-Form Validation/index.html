@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $( function() {
+            $("#datepicker").datepicker();
+        });
+
+        $(document).ready(function(){
+            $('form').submit(function(){
+                if(($("#firstname").val() === "")){
+                    alert("First name can't be blank!");
+                return false
+                };
+
+                if(($("#lastname").val() === "")){
+                    alert("Last name can't be blank!");
+                return false
+                };
+
+                if(($("#datepicker").val() === "")){
+                    alert("Date can't be blank!");
+                return false
+                };
+                
+                alert("Success, " + $("#firstname").val() + " " +$("#lastname").val() + "! Your vaccination is reserved on " + $("#datepicker").val() + ".");
+                return false
+            });
+        });
+    </script>
+    <style>
+        label{
+            display: block;
+            margin: 15px 0;
+        }
+    </style>
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Scheduling Form for Vaccination</h1>
+    <form action="" method="POST">
+        <label for="">First Name:
+            <input type="text" name="firstname" id="firstname">
+        </label>
+        <label for="">Last Name:
+            <input type="text" name="lastname" id="lastname">
+        </label>
+        <label for="">Preferred Date:
+            <input type="text" id="datepicker">
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Mini Documentation</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div
+					id="m1"
+					class="col-3 pt-5 border-start border-end border-dark text-center"
+				>
+					<ul style="list-style-type: none; position: fixed; margin-left: 80px">
+						<p></p>
+						<li><a href="#" id="cl">.click()</a></li>
+						<p></p>
+						<li><a href="#" id="hi">.hide()</a></li>
+						<p></p>
+						<li><a href="#" id="sh">.show()</a></li>
+						<p></p>
+						<li><a href="#" id="to">.toggle()</a></li>
+						<p></p>
+						<li><a href="#" id="sl1">.slideDown</a></li>
+						<p></p>
+						<li><a href="#" id="sl2">.slideUp()</a></li>
+						<p></p>
+						<li><a href="#" id="sl3">.slideToggle()</a></li>
+						<p></p>
+						<li><a href="#" id="f1">.fadeIn()</a></li>
+						<p></p>
+						<li><a href="#" id="f2">.fadeOut()</a></li>
+						<p></p>
+						<li><a href="#" id="a1">.addClass()</a></li>
+						<p></p>
+						<li><a href="#" id="b1">.before()</a></li>
+						<p></p>
+						<li><a href="#" id="a2">.after()</a></li>
+						<p></p>
+						<li><a href="#" id="a3">.append()</a></li>
+						<p></p>
+						<li><a href="#" id="h">.html()</a></li>
+						<p></p>
+						<li><a href="#" id="a4">.attr()</a></li>
+						<p></p>
+						<li><a href="#" id="v1">.val()</a></li>
+						<p></p>
+						<li><a href="#" id="t1">.text()</a></li>
+						<p></p>
+					</ul>
+				</div>
+				<div id="s1" class="col-9 p-4 text-center border-end border-dark">
+					<h1 class="display-1">My Mini Documentation</h1>
+					<p id="hh1" class="h2 text-center my-4">Click</p>
+					<button type="button" id="1" class="btn btn-primary mb-3">
+						.click()
+					</button>
+					<p id="click" class="h6">
+						Binds an event handler to the "click" Javascript event,or trigger
+						that event on an element.
+					</p>
+					<p id="click" class="h6">
+						Example Clicking the button will display alert box.
+					</p>
+					<p id="hh2" class="h2 text-center my-4">Hide</p>
+					<button type="button" id="2" class="btn btn-primary mb-3">
+						.hide()
+					</button>
+					<p id="hide" class="h6">
+						Hides the matched elements. Example: Hiding this paragraph.
+					</p>
+
+					<p id="hh3" class="h2 text-center my-4">Show</p>
+					<button type="button" id="3" class="btn btn-primary mb-3">
+						.show()
+					</button>
+					<p class="h6">
+						Displays the matched elements. Example: Showing the hidden paragraph
+						in hide section.
+					</p>
+					<p id="hh4" class="h2 text-center my-4">FadeOut</p>
+					<button type="button" id="4" class="btn btn-primary mb-3">
+						.fadeOut()
+					</button>
+					<p id="faded" class="h6">
+						FadeOut the visible element. Example: Fading out paragraph here.
+					</p>
+					<p id="hh5" class="h2 text-center my-4">FadeIn</p>
+					<button type="button" id="5" class="btn btn-primary mb-3">
+						.fadeIn()
+					</button>
+					<p class="h6">
+						Fade In hidden element. Example: Fade in the hidden paragraph in
+						fade out section.
+					</p>
+					<p id="hh6" class="h2 text-center my-4">slideDown</p>
+					<button type="button" id="6" class="btn btn-primary mb-3">
+						.slideDown()
+					</button>
+					<p class="h6">
+						Slide down the elements. Example: slideDown box here.
+					</p>
+					<style>
+						#panel,
+						#flip {
+							padding: 5px;
+							text-align: center;
+							background-color: #e5eecc;
+							border: solid 1px #c3c3c3;
+						}
+
+						#panel {
+							padding: 50px;
+							display: none;
+						}
+					</style>
+					<div id="flip">Click to slide down panel</div>
+					<div id="panel">Hello world!</div>
+					<p id="hh7" class="h2 text-center my-4">slideUp</p>
+					<button type="button" id="7" class="btn btn-primary mb-3">
+						.slideUp()
+					</button>
+					<p class="h6">Slide up the elements. Example: slideUp box above.</p>
+					<p id="hh8" class="h2 text-center my-4">slideToggle</p>
+					<button type="button" id="8" class="btn btn-primary mb-3">
+						.slideToggle()
+					</button>
+					<p class="h6">
+						Slide up and down the elements. Example: slideUp and slideDown box
+						above.
+					</p>
+					<p id="hh9" class="h2 text-center my-4">Toggle</p>
+					<button type="button" id="9" class="btn btn-primary mb-3">
+						.toggle()
+					</button>
+					<p id="tog" class="h6">
+						Checks the selected elements for visibility. show() is run if an
+						element is hidden. hide() is run if an element is visible Example:
+						show and hide this paragraph
+					</p>
+					<p id="hh10" class="h2 text-center my-4">AddClass</p>
+					<button type="button" id="10" class="btn btn-primary mb-3">
+						.addClass()
+					</button>
+					<style>
+						.intro {
+							font-size: 150%;
+							color: red;
+						}
+					</style>
+					<p id="add" class="h6">
+						Adds one or more class names to the selected elements.Example
+						paragraph here.
+					</p>
+					<p id="hh11" class="h2 text-center my-4">Before</p>
+					<button type="button" id="11" class="btn btn-primary mb-3">
+						.before()
+					</button>
+					<p id="bef" class="h6">
+						Inserts specified content in front of (before) the selected
+						elements.Example:below will add paragraph before paragraph .
+					</p>
+					<p id="hh12" class="h2 text-center my-4">After</p>
+					<button type="button" id="12" class="btn btn-primary mb-3">
+						.after()
+					</button>
+					<p id="aff" class="h6">
+						Inserts specified content after the selected elements. Example:below
+						will add paragraph after paragraph .
+					</p>
+					<p id="hh13" class="h2 text-center my-4">Append</p>
+					<button type="button" id="13" class="btn btn-primary mb-3">
+						.append()
+					</button>
+					<p id="app" class="h6">
+						The append() method inserts specified content at the end of the
+						selected elements. Example: The paragraph below will insert new
+						paragraph next to it.
+					</p>
+					<p id="hh14" class="h2 text-center my-4">HTML</p>
+					<button type="button" id="14" class="btn btn-primary mb-3">
+						.html()
+					</button>
+					<p id="ht" class="h6">
+						When this method is used to return content, it returns the content
+						of the FIRST matched element. When this method is used to set
+						content, it overwrites the content of ALL matched elements. Example:
+						Change content of paragraph here.
+					</p>
+					<p id="hh15" class="h2 text-center my-4">Attr</p>
+					<button type="button" id="15" class="btn btn-primary mb-3">
+						.attr()
+					</button>
+					<p class="h6">
+						When this method is used to return the attribute value, it returns
+						the value of the FIRST matched element. When this method is used to
+						set attribute values, it sets one or more attribute/value pairs for
+						the set of matched elements. Example: Change attributes of image
+						here.
+					</p>
+					<img
+						src="img_pulpitrock.jpg"
+						alt="Pulpit Rock"
+						width="284"
+						height="213"
+					/>
+					<p id="hh16" class="h2 text-center my-4">Val</p>
+					<button type="button" id="16" class="btn btn-primary mb-3">
+						.val()
+					</button>
+					<p id="ht" class="h6">
+						Returns or sets the value attribute of the selected elements
+						Example: Inserting comment in input field.
+					</p>
+					<p>Name: <input type="text" name="user" /></p>
+					<p id="hh17" class="h2 text-center my-4">Text</p>
+					<button type="button" id="17" class="btn btn-primary mb-3">
+						.text()
+					</button>
+					<p id="tx" class="h6">
+						Sets or returns the text content of the selected elements. Example:
+						Change content of paragraph here.
+					</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function () {
+				$("#2").click(function () {
+					$("p#hide").hide();
+				});
+				$("#3").click(function () {
+					$("p#hide").show();
+				});
+				$("#5").click(function () {
+					$("#faded").fadeIn();
+				});
+				$("#4").click(function () {
+					$("#faded").fadeOut();
+				});
+				$("#6").click(function () {
+					$("#panel").slideDown("slow");
+				});
+				$("#7").click(function () {
+					$("#panel").slideUp("slow");
+				});
+				$("#8").click(function () {
+					$("#panel").slideToggle("slow");
+				});
+				$("#1").click(function () {
+					alert("The button was clicked.");
+				});
+				$("#9").click(function () {
+					$("#tog").toggle();
+				});
+				$("#10").click(function () {
+					$("p#add:first").addClass("intro");
+				});
+				$("#11").click(function () {
+					$("#bef").before("<p>Hello world!</p>");
+				});
+				$("#12").click(function () {
+					$("#aff").after("<p>Hello world!</p>");
+				});
+				$("#13").click(function () {
+					$("#app").append(" <b>Appended text</b>.");
+				});
+				$("#14").click(function () {
+					$("#ht").html("Hello <b>world!</b>");
+				});
+				$("#15").click(function () {
+					$("img").attr("width", "500");
+				});
+				$("#16").click(function () {
+					$("input:text").val("Thats Nice, YAH YAH");
+				});
+				$("#17").click(function () {
+					$("#tx").text("Hello world!");
+				});
+				$("#cl").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh1").offset().top,
+						},
+						30
+					); // any value you need
+				});
+				$("#hi").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh2").offset().top,
+						},
+						40
+					); // any value you need
+				});
+				$("#sh").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh3").offset().top,
+						},
+						120
+					); // any value you need
+				});
+				$("#to").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh9").offset().top,
+						},
+						1100
+					); // any value you need
+				});
+				$("#sl1").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh6").offset().top,
+						},
+						600
+					); // any value you need
+				});
+				$("#sl2").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh7").offset().top,
+						},
+						750
+					); // any value you need
+				});
+				$("#sl3").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh8").offset().top,
+						},
+						950
+					); // any value you need
+				});
+				$("#f1").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh5").offset().top,
+						},
+						450
+					); // any value you need
+				});
+				$("#f2").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh4").offset().top,
+						},
+						200
+					); // any value you need
+				});
+				$("#a1").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh10").offset().top,
+						},
+						1300
+					); // any value you need
+				});
+				$("#b1").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh11").offset().top,
+						},
+						1400
+					); // any value you need
+				});
+				$("#a2").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh12").offset().top,
+						},
+						1600
+					); // any value you need
+				});
+				$("#a3").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh13").offset().top,
+						},
+						1800
+					); // any value you need
+				});
+				$("#h").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh14").offset().top,
+						},
+						2000
+					); // any value you need
+				});
+				$("#a4").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh15").offset().top,
+						},
+						2200
+					); // any value you need
+				});
+				$("#v1").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh16").offset().top,
+						},
+						2600
+					); // any value you need
+				});
+				$("#t1").click(function () {
+					$("html, body").animate(
+						{
+							scrollTop: $("#hh17").offset().top,
+						},
+						2800
+					); // any value you need
+				});
+			});
+		</script>
+	</body>
+</html>

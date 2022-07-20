@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="/script.js"></script>
+		<title>Background Chooser</title>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			width: 970px;
+			margin: auto;
+			text-align: center;
+		}
+		h1 {
+			color: black;
+			text-shadow: lightgray 0px 3px;
+			font-size: 4em;
+			padding: 3%;
+		}
+		#main_box {
+			background-color: lightgray;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 10px;
+		}
+		img {
+			display: block;
+			height: 100px;
+			width: 200px;
+			padding: 10px;
+		}
+		.add_border {
+			border: 2px solid yellow;
+		}
+	</style>
+
+	<body>
+		<h1>Background Chooser</h1>
+		<div id="main_box">
+			<img src="img/background1.gif" class="mini_boxes" />
+			<img src="img/background2.gif" class="mini_boxes" />
+			<img src="img/background3.gif" class="mini_boxes" />
+			<img src="img/background4.gif" class="mini_boxes" />
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("#main_box").click(function () {
+					$(".mini_boxes").removeClass("add_border");
+					$(this).css("background-image", "none");
+				});
+				$(".mini_boxes").click(function (event) {
+					event.stopPropagation();
+					$(".mini_boxes").removeClass("add_border");
+					$(this).addClass("add_border");
+					$(main_box).css(
+						"background-image",
+						"url(" + $(this).attr("src") + ")"
+					);
+				});
+			});
+		</script>
+	</body>
+</html>

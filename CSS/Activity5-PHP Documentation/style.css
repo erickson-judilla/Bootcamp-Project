@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Fira Sans, Source Sans Pro, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: 970px;
+  background-color: #303030;
+}
+
+.navigation {
+  display: inline-block;
+  background-color: #8892bf;
+  width: 970px;
+  border-bottom: 3px solid #4e5a90;
+}
+
+#img1 {
+  margin-left: 30px;
+}
+
+.navigation img {
+  width: 40px;
+  display: inline-block;
+  padding: 18px 10px 10px 10px;
+}
+
+.navigation p,
+.navigation label {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 10px;
+}
+.navigation input {
+  height: 10px;
+  padding: 5px;
+  width: 275px;
+}
+.navigation label {
+  margin-left: 100px;
+}
+
+#documentation {
+  background-color: #4e5a90;
+}
+
+.navigation p {
+  color: white;
+  padding: 20px 10px;
+  font-size: 14px;
+}
+header p {
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  margin: 15px 50px;
+  font-size: 13px;
+}
+.p2 {
+  margin-left: 350px;
+  margin-right: 0px;
+}
+main {
+  background-color: white;
+  width: 560px;
+  margin-left: 30px;
+  padding: 20px;
+  border-right: 5px solid grey;
+  display: inline-block;
+  vertical-align: top;
+}
+main p {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+}
+.language {
+  margin-left: 315px;
+}
+.language p {
+  margin-left: 10px;
+}
+.language a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 12px;
+}
+select {
+  height: 18px;
+  width: 100px;
+}
+h2 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.div {
+  color: grey;
+  font-size: 25px;
+  margin-top: -10px;
+}
+.div2 {
+  font-size: 25px;
+  margin-top: -10px;
+}
+h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+main ul {
+  font-size: 15px;
+  margin: 15px 28px;
+}
+main pre {
+  font-size: 14px;
+  margin-left: -305px;
+}
+h4 {
+  font-size: 20px;
+  display: inline-block;
+  color: #7b3862;
+  margin-top: 40px;
+}
+.div3 {
+  color: #7b3862;
+}
+.p3 {
+  font-size: 16px;
+  margin: 20px 0px;
+}
+.note {
+  display: inline;
+  margin-left: 250px;
+  font-size: 12px;
+}
+main .note img {
+  height: 12px;
+  margin: 0px;
+}
+section {
+  display: inline-block;
+  vertical-align: top;
+  color: rgb(202, 202, 202);
+  margin: 10px 20px;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 100;
+}
+section p {
+  font-size: 15px;
+  margin: 0;
+}
+section div {
+  color: #ab508a;
+  font-weight: bold;
+}
+footer {
+  display: inline-block;
+  vertical-align: top;
+  color: whitesmoke;
+  margin-top: 40px;
+  margin-left: 45px;
+  margin-bottom: 20px;
+}
+span {
+  margin-right: 10px;
+  font-size: 15px;
+}

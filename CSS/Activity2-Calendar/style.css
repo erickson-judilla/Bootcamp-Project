@@ -1,0 +1,117 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.heading {
+	display: inline-block;
+	vertical-align: top;
+	margin: 50px;
+}
+.head {
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 50px 90px;
+	font-size: x-large;
+}
+
+.august {
+	display: inline-block;
+	vertical-align: top;
+	margin: 40px;
+}
+img {
+	height: 100px;
+	width: 180px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+}
+.june {
+	margin-left: 20px;
+}
+
+#wrapper {
+	max-width: 960px;
+	margin: auto;
+}
+
+#main_calendar ul li {
+	display: inline-block;
+	margin: 5px 20px;
+	padding: 10px;
+}
+
+.sat {
+	background-color: #7de677;
+	width: 60px;
+	border: 2px solid black;
+	text-align: center;
+}
+.sat1 {
+	background-color: #7de677;
+	width: 60px;
+	border: 2px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+
+.sun {
+	width: 60px;
+	background-color: #2ba9e3;
+	border: 2px solid black;
+	text-align: center;
+}
+.sun1 {
+	width: 60px;
+	background-color: #2ba9e3;
+	border: 2px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+.days1 {
+	width: 60px;
+	border: 2px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+.days2 {
+	width: 60px;
+	border: 2px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+.days3 {
+	width: 60px;
+	border: 2px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+.days4 {
+	width: 60px;
+	border: 2px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+.days5 {
+	width: 60px;
+	border: 2px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+
+.days {
+	width: 60px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.blank {
+	width: 60px;
+	background-color: #e3e3e3;
+	color: #e3e3e3;
+	border: 2px solid #e3e3e3;
+}
+h1 {
+	margin-right: 40px;
+	margin-left: 40px;
+}
